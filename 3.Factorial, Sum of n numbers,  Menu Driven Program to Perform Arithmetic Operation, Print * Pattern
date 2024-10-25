@@ -1,0 +1,60 @@
+----->3A. Factorial
+ echo enter the number of rows
+ read r
+ i=1
+ t=1
+ while [ $i-le $r ]
+ do
+ j=1
+ while [ $j-le $i ]
+ do
+ echo-n "*"
+ j=$((j+1))
+ done
+ echo
+ i=$((i+1))
+ done
+ ------>3B. Sum of n numbers
+ echo How many numbers do you need to add
+ read n
+ i=1
+ sum=0
+ echo Enter the numbers
+ while [ $i-le $n ]
+ do
+ read num
+ sum=$((sum + num))
+ i=$((i + 1))
+ done
+ echo Total is $sum
+------>3C. Menu Driven Program to Perform Arithmetic Operation
+ echo Enter two numbers
+ read a
+ read b
+ echo MENU
+ echo 1.Addition 2.Subraction 3.Multiplication 4.Division
+ echo Select from the above menu
+ read c
+ case $c in
+ 1) echo sum = $(expr $a + $b);;
+ 2) echo Difference = $(expr $a- $b);;
+ 3) echo Product = $(expr $a \* $b);;
+ 4) echo Quotient = $(expr $a / $b);;
+ 5) echo Invalid Choice
+ esac
+------->3D. Print * Pattern
+ echo enter the number of rows
+ read r
+ i=1
+ t=1
+ while [ $i-le $r ]
+ do
+ j=1
+ while [ $j-le $i ]
+ do
+ echo-n "*"
+ j=$((j+1))
+ done
+ echo
+ i=$((i+1))
+ done
