@@ -1,0 +1,9 @@
+------> 5. Display Various System Information
+ echo SYSTEM INFORMATION
+ echo Current Date is $(date)
+ echo Current Directory = $(pwd)
+ echo Kernel All Information = $(uname-m)
+ echo Disk space Usage:
+ df
+ echo List of blocked devices:
+ lsblk
