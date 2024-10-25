@@ -1,0 +1,30 @@
+------> 4A. Convert the characters of file from Lowercase to Uppercase
+ echo "Enter the filename"
+ read name
+ if [ !-f $name ]
+ then
+ echo filename $name does not exist
+ exit 1
+ fi
+ tr "[a-z]" "[A-Z]" < $name
+-------> 4B. Count the Number of characters, words and lines in a given
+ text file.
+ echo Enter the filename
+ read file
+ c=`cat $file | wc-c`
+ w=`cat $file | wc-w`
+ l=`grep-c "." $file`
+ echo Number of characters in $file is $c
+ echo Number of Words in $file is $w
+ echo Number of lines in $file is $l
+-------> 4C. Check if the given file exists, if not create a new file.
+ echo enter the file name
+ read file
+ if [-f $file ]
+ then
+ echo File exists
+ else
+ echo File does not exist
+ touch $file
+ echo $file has been created
+ fi
